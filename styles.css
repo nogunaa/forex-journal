@@ -1,0 +1,449 @@
+body {
+    color: gray;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+#usd-pairs {
+    width: 100%;
+    padding-top: 80px;
+    overflow-x: scroll;
+}
+
+#usd-pairs ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+#usd-pairs ul li {
+    padding: 10px;
+    width: 80px;
+    text-align: center;
+    background: #efefef;
+    margin: 0 10px;
+}
+
+#usd-pairs ul li span {
+    width: 100%;
+    display: inline-block;
+}
+
+#usd-pairs ul li span.pair-name {
+    color: gray;
+}
+
+#usd-pairs ul li span.pair-price {
+    color: green;
+} */
+
+.navbar-brand {
+    font-size: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link {
+    color: gray;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: darkslategray;
+}
+
+.second-box {
+    background-image: url(https://cdn.dribbble.com/users/4479253/screenshots/12231271/git_developer_4x.jpg);
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 270px;  
+    padding-left: 50px;
+    margin-bottom: 30px;
+    height: 1000px;
+}
+
+.second-box h2 {
+    padding-top: 70px;
+    font-weight: bold;
+}
+
+.second-box p {
+    font-weight: bold;
+}
+
+.easy-ways {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.third-box {
+    margin: 50px 50px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.card {
+    border: none;
+}
+
+.card-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-title, .card-text {
+    padding-top: 30px;
+}
+
+/* .image-2 {
+    height: 340px;
+} */
+
+/* .image-3 {
+    height: 391px;
+} */
+
+#pricing {
+    text-align: center;
+}
+
+.fourth-box {
+    margin: 50px 50px;
+    display: flex;
+    justify-content: space-between; 
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+.fourth-box h2 {
+    font-weight: bold;
+}
+
+.fas-green, .standart-fas {
+    color: #58ACFA;
+}
+
+.two-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.first-column, .second-column {
+    padding: 30px 30px;
+    padding-left: 80px; 
+    padding-right: 100px;   
+}
+
+.included {
+     margin-bottom: 5px;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 80px;
+}
+
+.login-button {
+    background-color: transparent;
+    color: gray;
+    border: none;
+}
+
+.login-button:hover {
+    color: darkgray;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+.login-button:active {
+    color: gray;
+    background-color: transparent;
+    border: none;
+}
+
+.login-button:focus {
+    color: gray;
+    background-color: transparent;
+    border: transparent;
+}
+
+.login-button:focus-visible {
+    color: gray;
+    background-color: transparent;
+    border: transparent;
+}
+
+.price-button {
+    margin-bottom: 10px;
+}
+
+.price-button .btn {
+    width: 189px;
+}
+
+.create-button {
+    margin-bottom: 10px;  
+}
+
+.create-button .btn:hover {
+    background-color: rgb(34, 111, 173);
+}
+
+.create-button .btn {
+    background-color: #838383;
+    border: none;
+}
+
+.price-button .standart-button {
+    width: 189px;
+}
+
+.journal {
+    margin: 80px 80px;
+}
+
+.hr {
+    margin: 40px 40px;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 50px;
+    color: gray;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+@media only screen and (max-width: 900px) {
+    .image-1, .image-2, .image-3 {
+        height: 230px;
+    }
+
+    .fourth-box {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .texts {
+        margin-right: 40px;
+    }
+
+    .button {
+        margin-left: 140px;
+    }
+
+    .second-box {
+        height: 500px;
+    }
+
+    .second-box h2 {
+        margin-top: -190px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .image-1, .image-2, .image-3 {
+        height: 300px;
+        
+    }
+
+}
+
+.offcanvas-button {
+    background-color: #58ACFA;
+    border: none;
+}
+
+.create-button .offcanvas-button {
+    background-color: #58ACFA;
+    border: none;
+    width: 190px;
+}
+
+.forex-search {
+    margin-left:50px;
+}
+
+#forex-result {
+    color: green;
+}
+
+#forex-result.error {
+    color: red;
+}
+
+#submit-forex {
+    background-color: gray;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Chatbox */
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    border-radius: 4px;
+    width: 170px;
+  }
+  
+  /* The popup chat - hidden by default */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .form-container h1 {
+    color: gray;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn-send {
+    background-color: #58ACFA;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    border-radius: 4px;
+  }
+  
+  /* Add a red background color to the cancel button */
+   .btn-cancel {
+    background-color: darkgray;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  /* dashboard.html styling */
+
+  .account-summary {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .account-balance {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 10px; 
+  }
+
+  .account-balance tr, th {
+    padding: 10px;
+  }
+
+  .dashboard-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .dashboard-footer p, i {
+    margin: 20px;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .account-balance tr:nth-child(even){
+    background-color: #f2f2f2;
+  }
+
+  .account-balance tr:hover {
+    background-color: #ddd;
+  }
+
+  .account-balance th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+  }
+
+  .fixed-width-img {
+    width: 840px;
+  }

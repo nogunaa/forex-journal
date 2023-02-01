@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forex Journal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto&display=swap');
+    </style>
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/4d94c79bdf.js"></script> -->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">FOREX JOURNAL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Features
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Chart your trades</a></li>
+                <li><a class="dropdown-item" href="#">Charting targets and stop losses</a></li>
+                <li><a class="dropdown-item" href="#">Track commission and fees</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#why-journaling">Why Journaling</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button type="button" class="btn btn-primary login-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Login
+            </button>
+          
+            <button class="btn btn-primary offcanvas-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Create an account</button>          
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="swup" class="main transition-fade">
+      <div id="usd-pairs">
+
+        <!-- TradingView Widget BEGIN -->
+         <div class="tradingview-widget-container">
+           <div class="tradingview-widget-container__widget"></div>
+           <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+           <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+           {
+           "symbols": [
+             {
+               "proName": "FOREXCOM:SPXUSD",
+               "title": "S&P 500"
+             },
+             {
+               "proName": "FOREXCOM:NSXUSD",
+               "title": "US 100"
+             },
+             {
+               "proName": "FX_IDC:EURUSD",
+               "title": "EUR/USD"
+             },
+             {
+               "proName": "BITSTAMP:BTCUSD",
+               "title": "Bitcoin"
+             },
+             {
+               "proName": "BITSTAMP:ETHUSD",
+               "title": "Ethereum"
+             }
+           ],
+           "showSymbolLogo": false,
+           "colorTheme": "light",
+           "isTransparent": true,
+           "displayMode": "adaptive",
+           "locale": "en"
+         }
+           </script>
+       </div>
+       <!-- TradingView Widget END -->
+     </div>
+     
+       <nav id="home" class="second-box">
+         <h2>The Trading Journal To Boost Your Performance</h2>
+         <p>The Best Trading Journal Software to Help You Find Your Edge</p>
+       </nav>
+   
+       <h3 class="easy-ways">3 Easy Steps To Improve Your Performance</h3>
+   
+       <div class="third-box">
+         <div class="card-group">
+           <div class="card">
+             <img class="image-1" src="https://image.freepik.com/free-vector/people-protecting-their-cash_74855-5553.jpg" class="card-img-top" alt="journal">
+             <div class="card-body">
+               <h5 class="card-title">Journal Your Trades</h5>
+               <p class="card-text">Journal your trades in seconds. Have peace of mind knowing your data is fully backed up and secured. 
+                 The more you use your trading journal, the more ForexJournal can help sharpen your trading edge.</p>
+             </div>
+           </div>
+           <div class="card">
+             <img class="image-2" src="https://image.freepik.com/free-vector/couple-professionals-analyzing-graphs_74855-4393.jpg" class="card-img-top" alt="pattern">
+             <div class="card-body">
+               <h5 class="card-title">Identify Your Patterns</h5>
+               <p class="card-text">Our trading journal software identifies patterns in your trading and reports them back to you. 
+                 You can use these patterns to help you determine what is working and not for you.</p>
+             </div>
+           </div>
+           <div class="card">
+             <img class="image-3" src="https://image.freepik.com/free-vector/income-money-attraction_74855-6534.jpg" class="card-img-top" alt="performance">
+             <div class="card-body">
+               <h5 class="card-title">Boost Your Performance</h5>
+               <p class="card-text">Most of our trading losses coming from a set of trading mistakes. 
+                 Once you have analyzed the patterns to identify which trading mistakes are making you lose money, 
+                 you can focus on ensuring you avoid them on your next trading day.</p>
+             </div>
+           </div>
+         </div>
+       </div>
+   
+       <h2 id="pricing">Pricing</h2>
+   
+       <div class="fourth-box">
+         <div class="text-box">
+           <div class="texts">
+             <h2>Starter Plan</h2>
+             <p>Enjoy all the features on your free plan. If you wish to connect more than one account, 
+               choose Standard Plan.</p>
+             <p>WHAT'S INCLUDED</p> <hr>
+           </div>
+           
+           <div class="two-columns">
+             <div class="first-column">
+               <div class="included">
+                 <i class="fas fa-check-square fas-gray">&nbsp;Multiple accounts</i>
+               </div>
+               <div class="included">
+                 <i class="fas fa-check-square fas-green">&nbsp;Account sync</i>
+               </div>
+               <div class="included">
+                 <i class="fas fa-check-square fas-green">&nbsp;Trading strategies</i>
+               </div>
+             </div>
+     
+             <div class="second-column">
+               <div class="included">
+                 <i class="fas fa-check-square fas-green">&nbsp;Trade journaling</i>
+               </div>
+               <div class="included">
+                 <i class="fas fa-check-square fas-green">&nbsp;Trade sharing</i>
+               </div>
+               <div class="included">
+                 <i class="fas fa-check-square fas-green">&nbsp;History import</i>
+               </div>
+             </div>
+           </div>
+         </div>
+   
+         <div class="buttons">
+           <div class="price-button">
+             <button type="button" class="btn btn-secondary">FREE</button>
+           </div>
+           <div class="create-button">
+             <button class="btn btn-primary offcanvas-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Create an account</button> 
+           </div>
+           <p>No credit card required</p>
+         </div>
+       </div>
+   
+       <div class="fourth-box">
+         <div class="text-box">
+           <div class="texts">
+             <h2>Standart Plan</h2>
+             <p>All features included and connect as many broker accounts as you wish.</p>
+             <p>WHAT'S INCLUDED</p> <hr>
+           </div>
+           
+           <div class="two-columns">
+             <div class="first-column">
+               <div class="included">
+                 <i class="fas fa-check-square fas-gray standart-fas">&nbsp;Multiple accounts</i>
+               </div>
+               <div class="included">
+                 <i class="fas fa-check-square fas-green">&nbsp;Account sync</i>
+               </div>
+               <div class="included">
+                 <i class="fas fa-check-square fas-green">&nbsp;Trading strategies</i>
+               </div>
+             </div>
+     
+             <div class="second-column">
+               <div class="included">
+                 <i class="fas fa-check-square fas-green">&nbsp;Trade journaling</i>
+               </div>
+               <div class="included">
+                 <i class="fas fa-check-square fas-green">&nbsp;Trade sharing</i>
+               </div>
+               <div class="included">
+                 <i class="fas fa-check-square fas-green">&nbsp;History import</i>
+               </div>
+             </div>
+           </div>
+         </div>
+   
+         <div class="buttons">
+           <div class="price-button">
+             <button type="button" class="btn btn-secondary standart-button">$19 per month</button>
+           </div>
+           <div class="create-button">
+             <button class="btn btn-primary offcanvas-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Choose a standart plan</button> 
+           </div>
+         </div>
+       </div>
+   
+       <hr class="hr">
+   
+       <div id="why-journaling" class="journal">
+         <h3>Why Journaling?</h3>
+         <p>Keeping a trading journal is a smart strategy to enhance performance and gain confidence in executions. 
+           Success in forex trading requires a high level of planning and practice. To be consistently successful in trading, 
+           forex traders need to go through a comprehensive learning process. The best tool to guide and optimize
+           a forex trader’s system is through the use of a trading journal. If you plan on becoming a successful trader 
+           through performance, 
+           trading journals can steer you faster towards a profitable career.
+         </p>
+         <div class="create-button">
+           <button class="btn btn-primary offcanvas-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Create an account</button>
+         </div>
+       </div>
+   
+       <hr class="hr">
+   
+       <!-- Currenccy Rate -->
+   
+       <div class="forex-search row" id="ForexSearch">
+         <div class="col-md-6 col-sm-12">
+           <form id="search-form">
+             <label for="search-term">Search USD pairs</label>
+             <input id="forex-ticker-input" type="text" name="search-term">
+             <input id="submit-forex" type="submit">
+           </form>
+         </div>
+         <div class="col-md-6 col-sm-12">
+           <p id="forex-result"></p>
+         </div>
+       </div>
+   
+       <hr class="hr">
+   
+       <!-- Chatbox -->
+       <button class="open-button" onclick="openForm()">Let's Chat</button>
+   
+       <div class="chat-popup" id="myForm">
+         <form action="/action_page.php" class="form-container">
+           <h1>Forex Journal</h1>
+   
+           <label for="msg"><b>How can we help you?</b></label>
+           <textarea placeholder="Type message.." name="msg" required></textarea>
+   
+           <button type="button" class="btn-send" onclick="sendForm()">Send</button>
+           <button type="button" class="btn btn-cancel" onclick="closeForm()">Close</button>
+         </form>
+       </div>
+   <!-- TradingView Widget BEGIN -->
+   <div class="tradingview-widget-container">
+     <div class="tradingview-widget-container__widget"></div>
+     <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text"> </span></a> </div>
+     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+     {
+     "width": "100%",
+     "height": "300%",
+     "defaultColumn": "performance",
+     "screener_type": "crypto_mkt",
+     "displayCurrency": "USD",
+     "colorTheme": "light",
+     "locale": "en",
+     "isTransparent": true
+   }
+     </script>
+   </div>
+   <!-- TradingView Widget END -->
+       
+   
+       </div>
+   
+ 
+    
+    
+    
+     
+    <footer class="footer">
+      <div>
+        <p>FOREX JOURNAL</p>
+      </div>
+      <i class="far fa-copyright copyright">2023 Forex Journal. All rights reserved.</i>
+    </footer>
+
+    
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel"></h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form>
+          <div class="mb-3">
+            <label for="create-email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="create-email" aria-describedby="create-email-help">
+            <div id="create-email-help" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="create-password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="create-password">
+          </div>
+          <div class="mb-3">
+            <label for="create-password-2" class="form-label">Retype Password</label>
+            <input type="password" class="form-control" id="create-password-2">
+          </div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registration-success-modal">
+            Create my account
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal fade" id="registration-success-modal" tabindex="-1" aria-labelledby="registration-success-modal-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registration-success-modal-label">Registration Successful</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           Thank you for creating your account. 
+           $Happy Trading$
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary offcanvas-button" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Login to your account</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="login-email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="login-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="login-password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="/dashboard.html" class="btn btn-secondary">Sign In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+    <script src="js/main.js"></script>  
+  </body>
+
+</html>
